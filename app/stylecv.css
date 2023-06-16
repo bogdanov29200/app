@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.present img{
+height: 200px;
+position: absolute;
+top: 120px;
+left: 530px;
+border: 2px solid white;
+border-radius: 150px;
+}
+main h1{
+    margin-bottom: 30px;
+}
+main h2{
+    margin-bottom:20px ;
+}
+main h3{
+    margin-bottom: 10px;
+    color:  rgb(100, 11, 114);
+    border-bottom: solid 2px black;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+p{
+    text-align:center;
+    
+    color: rgb(0, 0, 0);
+}
+main ul{
+    color: rgb(100, 11, 114);
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    top:120px ;
+    right: 475px;
+}
+main ul li h1{
+  border-bottom: 1px solid ;
+   }
+   main ul li h2{
+    border-bottom: 1px solid ;
+   }
+main ul li p{
+  color:  rgb(255, 255, 255);  
+  margin-top: 10px;  
+}
+ ul img{
+    height: 50px;
+}
+.image1{
+background-image: url(images/joshua-earle-12689-unsplash.jpg) ;
+background-size: cover;
+}
+.image2{
+    background-image: url(images/iphone-410324_1280.jpg);
+    background-size:cover;
+   background-repeat: no-repeat;
+    
+}
+.image3{
+    background-image: url(images/business-5475661_1280.jpg);
+    background-size: cover;
+}
+.image4{
+    background-image: url(images/plouzane-1758197_1280.jpg);
+    background-size: cover;
+}
+.image5{
+    background-image: url(images/artificial-intelligence-3382507_1280.jpg);
+    background-size: cover;
+}
+main{
+    text-align: center;
+   text-transform: uppercase;
+   margin-top: 250px;  
+    height: 100%;
+    width: 100%;
+}
+footer{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 25px;
+    color: #6d1976;}
+nav 
+{  
+    width: 100%;
+    height: 100px;
+    background: #6d1976;
+}
+ 
+nav .main_pages 
+{   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+ 
+nav a:hover 
+{
+    background: #5A5766;
+}
+label
+{
+    display: none;
+    
+}
+label, #toggle{
+    display: none;
+}
+
+ 
+ 
+@media all and (max-width: 991px)
+{  
+    body{
+        display: block;
+        align-items: center;
+        margin-bottom: 250px;
+    }
+    main{
+        margin: 0px;
+    }
+    .present img{
+        height: 150px;
+        left: 130px;
+        top: 280px;
+    }
+    main .present{
+        text-align: center;
+        display:flex;
+        flex-direction:column;
+        margin-top: 400px;
+    }
+    main .present h3{
+        width: 50px;
+    }
+   
+    main ul{
+        display: block;
+        position: relative;
+        top: 250px;
+        right: 10px;
+    }
+    
+    nav
+    {
+        height: 60px;
+    }
+    nav .main_pages 
+    {
+        display: none;
+    }  
+
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+label, #toggle
+{
+    display: none;
+}
+}
+ 
+@media all and (max-width: 991px)
+ {
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+     }
+     nav a:hover 
+     {
+         background: #6d1976;
+        width: 100%;}
+        }
